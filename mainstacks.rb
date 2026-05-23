@@ -5,20 +5,20 @@
 class Mainstacks < Formula
   desc "A portable skill library for developers"
   homepage "https://github.com/cjhargre/mainstacks"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cjhargreaves/mainstacks/releases/download/v0.2.0/mainstacks_0.2.0_darwin_amd64.tar.gz"
-      sha256 "2a02e69c0d99150f9967bb3296a9e29e0cfd8641f4d4b9d5e3857442883c1807"
+      url "https://github.com/cjhargreaves/mainstacks/releases/download/v0.2.1/mainstacks_0.2.1_darwin_amd64.tar.gz"
+      sha256 "d1cae1d5b804bb8a39d2b9b6f163eb098afbe6f3463948d5aa8fed462cd4540a"
 
       define_method(:install) do
         bin.install "mainstacks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cjhargreaves/mainstacks/releases/download/v0.2.0/mainstacks_0.2.0_darwin_arm64.tar.gz"
-      sha256 "6f1a5138b47c8d5461b3c4397a3193e9054e5060d312aaedac16c89f46a4f2db"
+      url "https://github.com/cjhargreaves/mainstacks/releases/download/v0.2.1/mainstacks_0.2.1_darwin_arm64.tar.gz"
+      sha256 "ff2fb82e07310b34dd15f1ddad48507dc3eb468338a786c048ab5b99a392f0d2"
 
       define_method(:install) do
         bin.install "mainstacks"
@@ -28,15 +28,15 @@ class Mainstacks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cjhargreaves/mainstacks/releases/download/v0.2.0/mainstacks_0.2.0_linux_amd64.tar.gz"
-      sha256 "de48d63918893c7932fc20d4afa4030ec719717badc4de6a7d5df4b214286301"
+      url "https://github.com/cjhargreaves/mainstacks/releases/download/v0.2.1/mainstacks_0.2.1_linux_amd64.tar.gz"
+      sha256 "d2458c4fc6cd039eee953e9f3e973464e5c33a46702827a092e1fa2b20ed725e"
       define_method(:install) do
         bin.install "mainstacks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cjhargreaves/mainstacks/releases/download/v0.2.0/mainstacks_0.2.0_linux_arm64.tar.gz"
-      sha256 "c52b0f19ecf53a73f3c43060fa7ae48dc30159ae2bb9ceda2e71748905c88151"
+      url "https://github.com/cjhargreaves/mainstacks/releases/download/v0.2.1/mainstacks_0.2.1_linux_arm64.tar.gz"
+      sha256 "27e95b568a42725d89c4d3169b9bba51fd056399af22550fb47307db576fd85e"
       define_method(:install) do
         bin.install "mainstacks"
       end
